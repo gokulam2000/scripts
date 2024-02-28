@@ -1,7 +1,7 @@
 echo "enter the name of the file or directory"
 read p
 
-if [ -f $p ];
+if [ -e $p ];
 then
     getfacl $p
     echo "Do you want to cahnge the permissions?(yes/no)"
